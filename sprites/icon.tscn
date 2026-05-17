@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://teryga4akdo2"]
+
+[ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_kupqa"]
+
+[node name="Icon" type="Sprite2D" unique_id=2068061898]
+position = Vector2(384, 272)
+texture = ExtResource("1_kupqa")
