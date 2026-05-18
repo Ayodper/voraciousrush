@@ -3,5 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_kupqa"]
 
 [node name="Icon" type="Sprite2D" unique_id=2068061898]
-position = Vector2(384, 272)
+position = Vector2(136, 208)
 texture = ExtResource("1_kupqa")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1139627217]
