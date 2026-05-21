@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwju6llxs2je2"
-path="res://.godot/imported/mockup.png-4d00ec1657ba837dcff2c81d8c2c4491.ctex"
+uid="uid://cqigitg2pbyrf"
+path="res://.godot/imported/jump.png-38ba617da18a69ff2184384d6655ebc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Jungle Asset Pack/mockup.png"
-dest_files=["res://.godot/imported/mockup.png-4d00ec1657ba837dcff2c81d8c2c4491.ctex"]
+source_file="res://sprites/Jungle Asset Pack/Character/sprites/jump.png"
+dest_files=["res://.godot/imported/jump.png-38ba617da18a69ff2184384d6655ebc8.ctex"]
 
 [params]
 

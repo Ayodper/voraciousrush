@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3xmvjxgbegxt"
-path="res://.godot/imported/ducky_2_spritesheet.png-b243cbb6843dbc65d773211795a23dd1.ctex"
+uid="uid://bfopxg7gknq5u"
+path="res://.godot/imported/plx-3.png-183bc48d3153c82d18dc3b04b2a53835.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Jungle Asset Pack/Chacter with outline/sprites/ducky_2_spritesheet.png"
-dest_files=["res://.godot/imported/ducky_2_spritesheet.png-b243cbb6843dbc65d773211795a23dd1.ctex"]
+source_file="res://sprites/Jungle Asset Pack/parallax background/plx-3.png"
+dest_files=["res://.godot/imported/plx-3.png-183bc48d3153c82d18dc3b04b2a53835.ctex"]
 
 [params]
 

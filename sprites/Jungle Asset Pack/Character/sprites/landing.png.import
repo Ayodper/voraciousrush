@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxonc4joagve5"
-path="res://.godot/imported/landing.png-8c77cd04c0e791e5e5726db266e619d8.ctex"
+path="res://.godot/imported/landing.png-bedf1968f69758b1fb1204bd2d53df08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Jungle Asset Pack/Character/sprites/landing.png"
-dest_files=["res://.godot/imported/landing.png-8c77cd04c0e791e5e5726db266e619d8.ctex"]
+source_file="res://sprites/Jungle Asset Pack/Character/sprites/landing.png"
+dest_files=["res://.godot/imported/landing.png-bedf1968f69758b1fb1204bd2d53df08.ctex"]
 
 [params]
 

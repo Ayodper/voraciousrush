@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqigitg2pbyrf"
-path="res://.godot/imported/jump.png-a76bb6469da3f8c31d48db2bb85a8e9d.ctex"
+uid="uid://nevees6aks3n"
+path="res://.godot/imported/plx-4.png-ed3577b15c9772e093543b5b90a32a70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Jungle Asset Pack/Character/sprites/jump.png"
-dest_files=["res://.godot/imported/jump.png-a76bb6469da3f8c31d48db2bb85a8e9d.ctex"]
+source_file="res://sprites/Jungle Asset Pack/parallax background/plx-4.png"
+dest_files=["res://.godot/imported/plx-4.png-ed3577b15c9772e093543b5b90a32a70.ctex"]
 
 [params]
 

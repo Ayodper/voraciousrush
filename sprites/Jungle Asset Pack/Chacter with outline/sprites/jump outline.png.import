@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vwyvvb13h6ic"
-path="res://.godot/imported/plx-2.png-aaaf1a2fbcbd34722cd4cb62a8e506df.ctex"
+uid="uid://c0a01egl7dh7o"
+path="res://.godot/imported/jump outline.png-a0ba4a65b65d368e43a37209407c6a70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Jungle Asset Pack/parallax background/plx-2.png"
-dest_files=["res://.godot/imported/plx-2.png-aaaf1a2fbcbd34722cd4cb62a8e506df.ctex"]
+source_file="res://sprites/Jungle Asset Pack/Chacter with outline/sprites/jump outline.png"
+dest_files=["res://.godot/imported/jump outline.png-a0ba4a65b65d368e43a37209407c6a70.ctex"]
 
 [params]
 
