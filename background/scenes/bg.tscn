@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://di8d0fa5f1hpq"]
 
-[ext_resource type="Texture2D" uid="uid://jf6na3knrv5o" path="res://Jungle Asset Pack/parallax background/plx-1.png" id="1_p0cne"]
-[ext_resource type="Texture2D" uid="uid://vwyvvb13h6ic" path="res://Jungle Asset Pack/parallax background/plx-2.png" id="2_gsika"]
-[ext_resource type="Texture2D" uid="uid://bfopxg7gknq5u" path="res://Jungle Asset Pack/parallax background/plx-3.png" id="3_efuf2"]
-[ext_resource type="Texture2D" uid="uid://nevees6aks3n" path="res://Jungle Asset Pack/parallax background/plx-4.png" id="4_d2a0r"]
-[ext_resource type="Texture2D" uid="uid://cuhhlsg54y2p4" path="res://Jungle Asset Pack/parallax background/plx-5.png" id="5_4akqb"]
+[ext_resource type="Texture2D" uid="uid://jf6na3knrv5o" path="res://scenes/Jungle Asset Pack/parallax background/plx-1.png" id="1_p0cne"]
+[ext_resource type="Texture2D" uid="uid://vwyvvb13h6ic" path="res://scenes/Jungle Asset Pack/parallax background/plx-2.png" id="2_gsika"]
+[ext_resource type="Texture2D" uid="uid://bfopxg7gknq5u" path="res://scenes/Jungle Asset Pack/parallax background/plx-3.png" id="3_efuf2"]
+[ext_resource type="Texture2D" uid="uid://nevees6aks3n" path="res://scenes/Jungle Asset Pack/parallax background/plx-4.png" id="4_d2a0r"]
+[ext_resource type="Texture2D" uid="uid://cuhhlsg54y2p4" path="res://scenes/Jungle Asset Pack/parallax background/plx-5.png" id="5_4akqb"]
 
 [node name="bg" type="ParallaxBackground" unique_id=534829721]
 

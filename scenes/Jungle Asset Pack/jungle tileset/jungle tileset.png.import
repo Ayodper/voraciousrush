@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfopxg7gknq5u"
-path="res://.godot/imported/plx-3.png-4c0b0967e7d54820adffc62d21fdbed4.ctex"
+uid="uid://cx14brpwjuqk3"
+path="res://.godot/imported/jungle tileset.png-31d7c7c43abe6e7c6396e0738d82ce65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jungle Asset Pack/parallax background/plx-3.png"
-dest_files=["res://.godot/imported/plx-3.png-4c0b0967e7d54820adffc62d21fdbed4.ctex"]
+source_file="res://scenes/Jungle Asset Pack/jungle tileset/jungle tileset.png"
+dest_files=["res://.godot/imported/jungle tileset.png-31d7c7c43abe6e7c6396e0738d82ce65.ctex"]
 
 [params]
 

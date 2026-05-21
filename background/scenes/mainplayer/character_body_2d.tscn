@@ -1,8 +1,36 @@
 [gd_scene format=3 uid="uid://dehhp4ne55d61"]
 
+[ext_resource type="Texture2D" uid="uid://bu6hk55yjlxh" path="res://Animations/ducky_2_spritesheet.png" id="1_g5c8f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1ovs"]
+atlas = ExtResource("1_g5c8f")
+region = Rect2(4, 0, 31, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lyw7n"]
+atlas = ExtResource("1_g5c8f")
+region = Rect2(35, 0, 31, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_16dmo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1ovs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lyw7n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=738500252]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=179031153]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_16dmo")
+animation = &"idle"
+frame_progress = 0.37224013
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=42035398]
 

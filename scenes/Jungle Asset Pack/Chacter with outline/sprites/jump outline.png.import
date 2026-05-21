@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx14brpwjuqk3"
-path="res://.godot/imported/jungle tileset.png-9434d2c818ad877122022a3e5a72386f.ctex"
+uid="uid://c0a01egl7dh7o"
+path="res://.godot/imported/jump outline.png-1103879808fd5c2976c1a82d6a952e6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Jungle Asset Pack/jungle tileset/jungle tileset.png"
-dest_files=["res://.godot/imported/jungle tileset.png-9434d2c818ad877122022a3e5a72386f.ctex"]
+source_file="res://scenes/Jungle Asset Pack/Chacter with outline/sprites/jump outline.png"
+dest_files=["res://.godot/imported/jump outline.png-1103879808fd5c2976c1a82d6a952e6b.ctex"]
 
 [params]
 
