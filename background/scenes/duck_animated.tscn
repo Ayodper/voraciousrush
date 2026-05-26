@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://by2tsgo28oxb6"]
 
+[ext_resource type="Script" uid="uid://cpu4lm4e1kywq" path="res://background/scenes/duck_animated.gd" id="1_7i74v"]
 [ext_resource type="Texture2D" uid="uid://bu6hk55yjlxh" path="res://Animations/ducky_2_spritesheet.png" id="1_xdwx6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g5c8f"]
@@ -136,8 +137,10 @@ size = Vector2(17, 26)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mirn6"]
 size = Vector2(20, 15)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=738500252]
+[node name="duck" type="CharacterBody2D" unique_id=738500252]
+z_index = 1
 scale = Vector2(8, 8)
+script = ExtResource("1_7i74v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=179031153]
 texture_filter = 1
