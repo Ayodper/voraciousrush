@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cxyr8cgonguax"]
+
+[ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_1tfqh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kiqq3"]
+size = Vector2(128, 128)
+
+[node name="chicken leg" type="Area2D" unique_id=1673576260]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1553301838]
+texture = ExtResource("1_1tfqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=645349266]
+shape = SubResource("RectangleShape2D_kiqq3")
