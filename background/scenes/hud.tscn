@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bt3kdpgtsobsw"]
+
+[node name="hud" type="CanvasLayer" unique_id=1170489713]
+
+[node name="scorelabel" type="Label" parent="." unique_id=1390674064]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "SCORE:"
+horizontal_alignment = 1
+vertical_alignment = 1
