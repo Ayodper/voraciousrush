@@ -34,8 +34,18 @@ func _process(delta):
 	
 	#update score
 	score += speed
-	print(score)
+	show_score()
 
 	# update ground position
 	if $Camera2D.position.x - $ground.position.x > screen_size.x * 1.5:
 		$ground.position.x += screen_size.x
+
+
+
+func show_score():
+	$hud.get_node("scorelabel").text = " SCORE: " + str(score)
+	
+	
+	
+	
+	
