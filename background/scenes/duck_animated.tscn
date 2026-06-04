@@ -3,10 +3,6 @@
 [ext_resource type="Script" uid="uid://cpu4lm4e1kywq" path="res://background/scenes/duck_animated.gd" id="1_7i74v"]
 [ext_resource type="Texture2D" uid="uid://bu6hk55yjlxh" path="res://Animations/ducky_2_spritesheet.png" id="1_xdwx6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g5c8f"]
-atlas = ExtResource("1_xdwx6")
-region = Rect2(4, 0, 31, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_sasrn"]
 atlas = ExtResource("1_xdwx6")
 region = Rect2(35, 0, 31, 32)
@@ -66,9 +62,6 @@ region = Rect2(159, 32, 31, 32)
 [sub_resource type="SpriteFrames" id="SpriteFrames_16dmo"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g5c8f")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_sasrn")
 }, {
@@ -147,8 +140,6 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_16dmo")
 animation = &"duck"
 autoplay = "idle"
-frame = 2
-frame_progress = 0.70019436
 
 [node name="runcol" type="CollisionShape2D" parent="." unique_id=42035398]
 position = Vector2(-4.5, 3)
