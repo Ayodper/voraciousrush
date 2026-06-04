@@ -6,6 +6,7 @@ const CAM_START_POS := Vector2i(576, 324)
 
 var score : int
 var speed : float
+const SCORE_MODIFIER : int = 10
 const START_SPEED : float = 10.0
 const MAX_SPEED : int = 25
 
@@ -43,7 +44,7 @@ func _process(delta):
 
 
 func show_score():
-	$hud.get_node("scorelabel").text = " SCORE: " + str(score)
+	$hud.get_node("scorelabel").text = " SCORE: " + str(score/ SCORE_MODIFIER)
 	
 	
 	
