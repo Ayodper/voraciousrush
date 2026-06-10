@@ -7,7 +7,10 @@ const JUMP_SPEED = -1800
 func _physics_process(delta):
 	velocity.y+= GRAVITY * delta
 	if is_on_floor():
-		$runcol.disabled = false
+		if not get_parent() .game_running:
+			pass
+		else:
+			$runcol.disabled = false
 		if Input.is_action_pressed("ui_accept"):
 			velocity.y=JUMP_SPEED
 		
