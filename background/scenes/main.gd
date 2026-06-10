@@ -9,6 +9,7 @@ var speed : float
 const SCORE_MODIFIER : int = 10
 const START_SPEED : float = 10.0
 const MAX_SPEED : int = 25
+var game_running : bool
 
 var screen_size : Vector2   # <-- FIXED (added this)
 
@@ -27,26 +28,30 @@ func new_game():
 
 
 func _process(delta):
-	speed = START_SPEED
+	if game_running:
+		speed = START_SPEED
 
-	# move dino and camera
-	$duck.position.x += speed
-	$Camera2D.position.x += speed
-	
-	#update score
-	score += speed
-	show_score()
+		# move dino and camera
+		$duck.position.x += speed
+		$Camera2D.position.x += speed
+		
+		#update score
+		score += speed
+		show_score()
 
-	# update ground position
-	if $Camera2D.position.x - $ground.position.x > screen_size.x * 1.5:
-		$ground.position.x += screen_size.x
+		# update ground position
+		if $Camera2D.position.x - $ground.position.x > screen_size.x * 1.5:
+			$ground.position.x += screen_size.x
+	else:
+		if Input.is_action_pressed("ui_accept"):
+			game_running = true
 
 
 
 func show_score():
-	$hud.get_node("scorelabel").text = " SCORE: " + str(score/ SCORE_MODIFIER)
-	
-	
-	
-	
-	
+		$hud.get_node("scorelabel").text = " SCORE: " + str(score/ SCORE_MODIFIER)
+		
+		
+		
+		
+		
