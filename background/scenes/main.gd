@@ -25,6 +25,9 @@ func new_game():
 	$duck.velocity = Vector2i(0, 0)
 	$Camera2D.position = CAM_START_POS
 	$ground.position = Vector2i(0, 0)
+	
+	#reset hud
+	$hud.get_node("startlabel").show()
 
 
 func _process(delta):
@@ -45,6 +48,7 @@ func _process(delta):
 	else:
 		if Input.is_action_pressed("ui_accept"):
 			game_running = true
+			$hud.get_node("startlabel").hide()
 
 
 
