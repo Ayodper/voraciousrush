@@ -9,6 +9,7 @@ var speed : float = 0.0
 const SCORE_MODIFIER : int = 10
 const START_SPEED : float = 10.0
 const MAX_SPEED : int = 25
+const SPEED_MODIFIER : int = 5000
 var game_running : bool = false
 
 var screen_size : Vector2
@@ -37,7 +38,9 @@ func new_game():
 
 func _process(delta):
 	if game_running:
-		speed = START_SPEED
+		speed = START_SPEED + score / SPEED_MODIFIER
+		if speed > MAX_SPEED:
+			speed = MAX_SPEED
 
 		# move duck + camera
 		$duck.position.x += speed
