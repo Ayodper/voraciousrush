@@ -1,5 +1,17 @@
 extends Node
 
+#load obstacles before game starts
+
+var stump_scene = preload("res://background/scenes/stump.tscn")
+var rock_scene =  preload("res://background/scenes/rock.tscn")
+var chicken_scene = preload("res://background/scenes/chicken_leg.tscn")
+var barrel_scene = preload("res://background/scenes/barrel.tscn")
+
+
+
+
+
+
 # game variables
 const DUCK_START_POS := Vector2i(150, 485)
 const CAM_START_POS := Vector2i(576, 324)
@@ -41,6 +53,7 @@ func _process(delta):
 		speed = START_SPEED + score / SPEED_MODIFIER
 		if speed > MAX_SPEED:
 			speed = MAX_SPEED
+
 
 		# move duck + camera
 		$duck.position.x += speed
