@@ -6,7 +6,9 @@ var stump_scene = preload("res://background/scenes/stump.tscn")
 var rock_scene =  preload("res://background/scenes/rock.tscn")
 var chicken_scene = preload("res://background/scenes/chicken_leg.tscn")
 var barrel_scene = preload("res://background/scenes/barrel.tscn")
-
+var obstacle_types := [stump_scene, rock_scene, barrel_scene]
+var obstacles : Array
+var chicken_heights :=[200, 390]
 
 
 
@@ -23,6 +25,7 @@ const START_SPEED : float = 10.0
 const MAX_SPEED : int = 25
 const SPEED_MODIFIER : int = 5000
 var game_running : bool = false
+var last_obs
 
 var screen_size : Vector2
 
@@ -53,6 +56,21 @@ func _process(delta):
 		speed = START_SPEED + score / SPEED_MODIFIER
 		if speed > MAX_SPEED:
 			speed = MAX_SPEED
+		
+		
+		#generate obstacles
+		generate_obs()
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 		# move duck + camera
@@ -73,6 +91,15 @@ func _process(delta):
 			game_running = true
 			$hud/startlabel.hide()
 
+func generate_obs():
+	#generate ground obstacles
+	if obstacles.is_empty():
+		var obs_type = obstacle_types[randi() % obstacle_types.size()]
+		var obs
+		obs = obs_type.instantiate()
+		last_obs = obs
+		add_child(obs)
+		obstacles.append(obs)
 
 func show_score():
 	$hud/scorelabel.text = "SCORE: " + str(score / SCORE_MODIFIER)
