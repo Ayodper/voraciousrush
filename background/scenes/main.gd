@@ -24,6 +24,7 @@ const SCORE_MODIFIER : int = 10
 const START_SPEED : float = 10.0
 const MAX_SPEED : int = 25
 const SPEED_MODIFIER : int = 5000
+var ground_height : int
 var game_running : bool = false
 var last_obs
 
@@ -31,6 +32,7 @@ var screen_size : Vector2
 
 func _ready() -> void:
 	screen_size = get_viewport().get_visible_rect().size
+	ground_height = $ground.get_node("Sprite2D").texture.get_height()
 	new_game()   # <-- REQUIRED
 
 
@@ -97,7 +99,12 @@ func generate_obs():
 		var obs_type = obstacle_types[randi() % obstacle_types.size()]
 		var obs
 		obs = obs_type.instantiate()
+		var obs_height = obs.get_node("Sprite2D").texture.get_height()
+		var obs_scale = obs.get_node("Sprite2D").scale
+		var obs_x : int = screen_size.x + score + 100
+		var obs_y : int = screen_size.y - ground_height - (obs_height * obs_scale.y / 2) + 5
 		last_obs = obs
+		obs.position = Vector2i(obs_x, obs_y)
 		add_child(obs)
 		obstacles.append(obs)
 
