@@ -112,6 +112,7 @@ func generate_obs():
 
 func add_obs(obs, x, y):
 	obs.position = Vector2i(x,y)
+	obs.body_entered.connect(hit_obs)
 	add_child(obs)
 	obstacles.append(obs)
 	
@@ -119,6 +120,11 @@ func add_obs(obs, x, y):
 func remove_obs(obs):
 	obs.queue_free()
 	obstacles.erase(obs)
+	
+func hit_obs(body):
+	if body.name == "duck":
+		game_over()
+
 
 func show_score():
 	$hud/scorelabel.text = "SCORE: " + str(score / SCORE_MODIFIER)
@@ -129,3 +135,8 @@ func adjust_difficulty():
 	difficulty = score / SPEED_MODIFIER
 	if difficulty > MAX_DIFFCULTY:
 		difficulty = MAX_DIFFCULTY
+
+
+func game_over():
+	get_tree().paused = true
+	game_running = false

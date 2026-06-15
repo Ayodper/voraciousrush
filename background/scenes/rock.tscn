@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c2ksotcd7wyxw" path="res://icon.svg" id="1_jl7yn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mhaxx"]
-size = Vector2(128, 128)
+size = Vector2(96, 96)
 
 [node name="rock" type="Area2D" unique_id=1285467338]
 
